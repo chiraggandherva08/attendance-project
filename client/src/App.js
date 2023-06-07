@@ -24,20 +24,16 @@ function App() {
       <ul id='student-list'>
         {
           students.map((student, index) => {
-            const attendance_percentage = (student.attendance/30) * 100;
+            const attendance_percentage = (student.attendance / 30) * 100;
 
-            let bgcolor = 'blue';
-            let fcolor = 'white';
+            let bgcolor = 'rgb(68, 83, 255)';
+            let fcolor = 'black';
 
-            if (attendance_percentage < 30) { bgcolor = 'red' }
-            else if (attendance_percentage < 50) { 
-              bgcolor = 'yellow'; 
-              fcolor = 'black'; 
-            }
+            if (attendance_percentage < 30) { bgcolor = 'rgb(255, 58, 58)' }
+            else if (attendance_percentage < 50) { bgcolor = 'rgb(255, 155, 68)' }
 
             const style = {
-              width: `${(student.attendance/30) * 100}%`,
-              height: '40px',
+              width: `${(student.attendance / 30) * 100}%`,
               background: bgcolor,
               color: fcolor
             }
