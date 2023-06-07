@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#student-list {
+  width: calc(100% - 40px);
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  margin-top: 40px;
+
+  list-style-type: none;
+}
+
+.every-student-attendance-bar {
+  color: white;
+
+  margin-top: 5px;
+  height: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
